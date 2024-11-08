@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br" >
+<head>
+  <meta charset="utf-8">
+  <title> Campeonato Copa Do Nordeste </title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  </link>
+</head>
+
+<body>
+  <header>
+    <div class="container animate__animated animate__pulse">
+        <div class="logo"><img src="img/logo.png" alt="Imagem CSS" width="100px"></div>
+        <div class="menu">
+          <nav>
+            <h1>Campeonatos de Futebol Masculino e Feminino</h1>
+            <hr>
+            <a href="index.html">História do Futebol</a>
+            <a href="01.html">Paulista Masculino</a>
+            <a href="02.html">Paulista Feminino</a>
+            <a href="04.html">Taça das Favelas</a>
+            <a href="05.html">Super Copa Pioneer</a>
+          </hr>
+            <h5>Colégio Objetivo - 2ºM1</h5>
+          </nav>
+      </div>
+
+      <button onclick="animar()" id="btn-menu">
+        <span class="linha"></span>
+        <span class="linha"></span>
+        <span class="linha"></span>
+      </button>
+
+      <div class="menu-mobile" id="menu-mobile">
+          <nav>
+            <h1>Campeonatos de Futebol Masculino e Feminino</h1>
+            <hr>
+            <a href="index.html">História do Futebol</a>
+            <a href="01.html">Paulista Masculino</a>
+            <a href="02.html">Paulista Feminino</a>
+            <a href="04.html">Taça das Favelas</a>
+            <a href="05.html">Super Copa Pioneer</a>
+          </hr>
+            <h5>Colégio Objetivo - 2ºM1</h5>
+          </nav>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <div class="apresentacao">
+  <main class="apresentacao" >
+    <section class="apresentacao_conteudo">
+      <h1 class="apresentacao_conteudo_titulo"> Campeonato Copa Do Nordeste </h1>
+  <img class src="img/campeaocdn2024.jpg" alt="Imagem CSS" width="350px">
+      <p class="apresentacao_conteudo_texto">A Copa do Nordeste de Futebol (também conhecida como Nordestão, Campeonato do Nordeste e Lampions League) é uma competição de futebol disputada entre equipes dA Copa do Nordeste de Futebol (também conhecida como Nordestão, Campeonato do Nordeste e Lampions League) é uma competição de futebol disputada entre equipes da Região Nordeste do Brasil.
+      Considerado um dos campeonatos regionais mais importantes do país (por alguns, o mais importante), o "Nordestão" foi uma competição intermitente no calendário do futebol brasileiro em seus primeiros anos. Organizada oficialmente pela primeira vez em 1994, o torneio foi disputado continuamente entre 1997 e 2003, época em que passou a ser organizado pela Confederação Brasileira de Futebol (CBF). Teve quase todas suas edições canceladas entre 2004 e 2012, com exceção da edição de 2010. Retornou novamente ao calendário do futebol brasileiro em 2013.Nas 19 edições realizadas, houve nove clubes campeões. Bahia e Vitória (clubes rivais de Salvador, que duelam o clássico Ba-Vi) são os maiores vencedores do "Nordestão", com quatro títulos cada. O Sport, o Ceará e o Fortaleza foram campeões em 3 oportunidades. América de Natal, Campinense, Santa Cruz e Sampaio Corrêa possuem uma conquista cada.</p>
+         
+      <p>Entre as edições de 1997 e 1999, o campeão garantiu também uma vaga na Copa Conmebol, mas a partir das edições de 2000 até 2013 o campeão não garantiu vaga porque a Copa Conmebol foi extinta. Entre as edições de 2014 a 2016, os campeões obtiveram vaga para a Copa Sul-Americana do mesmo ano. em 2017 a 2019, o campeão garantiria vaga direta nas oitavas de final da Copa do Brasil do ano seguinte. A partir de 2020, o campeão também obtém vaga no torneio nacional do ano seguinte, só que na terceira fase.</p>
+       <img class src="img/primeirocampeaocdn.jpeg" alt="Imagem CSS" width="350px">
+      <p>Considerado um dos campeonatos regionais mais importantes do país (por alguns, o mais importante), o "Nordestão" foi uma competição intermitente no calendário do futebol brasileiro em seus primeiros anos. Organizada oficialmente pela primeira vez em 1994, o torneio foi disputado continuamente entre 1997 e 2003, época em que passou a ser organizado pela Confederação Brasileira de Futebol (CBF). Teve quase todas suas edições canceladas entre 2004 e 2012, com exceção da edição de 2010. Retornou novamente ao calendário do futebol brasileiro em 2013.</p>
+       <img class src="img/ronaldinho.jpg"  alt="Imagem CSS" width="350px">
+</section>
+  </main>
+    </div>
+  </div>
+  <footer class="rodape">
+    <button onclick="backtotop()" id="btntop"> <img src="img/_topo.png" alt="topo"></button>
+    <script> 
+      window.onscroll = function(){
+        scroll();
+      }
+      function scroll(){
+        var btn = document.getElementById("btntop");
+        if(document.documentElement.scrollTop > 400){
+          btn.style.display = "block";
+        }else{
+          btn.style.display = "none";
+        }
+      }
+      function backtotop(){
+        document.documentElement.scrollTop = 0;
+      }
+      function animar(){
+        const btn = document.getElementById('btn-menu');
+        btn.classList.toggle('ativar')
+      }
+      </script>
+    <script src="script.js"></script>
+  </footer>
+</body> 
+</html>

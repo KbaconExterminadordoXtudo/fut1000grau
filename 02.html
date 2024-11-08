@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br" >
+<head>
+  <meta charset="utf-8">
+  <title> Campeonato Paulista Feminino </title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  </link>
+</head>
+
+<body>
+  <header>
+    <div class="container animate__animated animate__pulse">
+        <div class="logo"><img src="img/logo.png" alt="Imagem CSS" width="100px"></div>
+        <div class="menu">
+          <nav>
+            <h1>Campeonatos de Futebol Masculino e Feminino</h1>
+            <hr>
+            <a href="index.html">História do Futebol</a>
+            <a href="01.html">Paulista Masculino</a>
+            <a href="03.html">Copa do Nordeste</a>
+            <a href="04.html">Taça das Favelas</a>
+            <a href="05.html">Super Copa Pioneer</a>
+          </hr>
+            <h5>Colégio Objetivo - 2ºM1</h5>
+          </nav>
+      </div>
+
+      <button onclick="animar()" id="btn-menu">
+        <span class="linha"></span>
+        <span class="linha"></span>
+        <span class="linha"></span>
+      </button>
+
+      <div class="menu-mobile" id="menu-mobile">
+          <nav>
+            <h1>Campeonatos de Futebol Masculino e Feminino</h1>
+            <hr>
+            <a href="index.html">História do Futebol</a>
+            <a href="01.html">Paulista Masculino</a>
+            <a href="03.html">Copa do Nordeste</a>
+            <a href="04.html">Taça das Favelas</a>
+            <a href="05.html">Super Copa Pioneer</a>
+          </hr>
+            <h5>Colégio Objetivo - 2ºM1</h5>
+          </nav>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <div class="apresentacao">
+  <main class="apresentacao" >
+    <section class="apresentacao_conteudo">
+      <h1 class="apresentacao_conteudo_titulo">Campeonato Paulista Feminino</h1>
+  <img class src="img/feminino(1).jpeg" alt="Imagem CSS" width="350px">
+      <p class="apresentacao_conteudo_texto">O Campeonato Paulista de Futebol Feminino é uma competição do futebol brasileiro disputada por equipes do estado de São Paulo filiadas à Federação Paulista de Futebol, a entidade organizadora do campeonato. Disputada oficialmente pela primeira vez em 1987 e de maneira ininterrupta desde 2004, é a principal competição feminina do futebol paulista.</p>
+      <img class src="img/almeirascamp.jpeg" alt="Imagem CSS" width="350px">
+      <p>A primeira edição oficial do Paulista feminino foi realizada em fins de 1987 e teve a Juventus-SP como campeã. Dez anos depois dessa edição pioneira, a FPF organizou uma nova competição com oito equipes, incluindo univesitárias. Além de Corinthians, Palmeiras, Santos e São Paulo, também participaram com times próprios o Mackenzie e a USP e, em parceria respectivamente com Portuguesa de Desportos e Juventus, a Universidade Sant'Anna e a Universidade São Judas Tadeu.</p>
+      <img class src="img/çaça.jpeg" alt="Imagem CSS" width="350px">
+      <p>Após não ter sido disputado em 2002 e 2003, o Paulista feminino retornou ao calendário do futebol estadual com organização da Secretaria de Estado da Juventude, Esporte e Lazer e apoio da FPF. Na edição de 2004, houve 32 participantes na disputa — o maior número até hoje — entre equipes filiadas à Federação e times de universidades ou de prefeituras municipais do estado.
+      Já sem a Secretaria de Estado da Juventude, Esporte e Lazer, a FPF reassumiu o controle total da organização do Paulista feminino em 2009, então apenas clubes filiados à entidade participaram da edição dessa temporada.
+      Em 2016, a Federação criou um departamento exclusivo para a modalidade feminina, cuja primeira dirigente foi a ex-jogadora Aline Pellegrino.</p>
+      <img class src="img/xuxa.webp" alt="Imagem CSS" width="350px">
+  <p>Na primeira fase, as equipes se enfrentam dentro do seu grupo em jogos de ida e volta. Os quatro primeiros colocados de cada grupo avançam para a segunda fase da competição, sendo redistribuídos em dois grupos compostos pelo 1.º e o último de um grupo e o 2.º e 3.º do outro.
+  Na segunda fase, as equipes disputam novamente partidas dentro dos grupos, em jogos de ida e volta. Os dois melhores colocados de cada grupo, se classificam para as semifinais que serão disputadas em partidas de ida e volta, sempre com a última partida de mando da equipe de melhor campanha na segunda fase.
+  Com o fim da Copa do Brasil Feminina, a equipe melhor classificada que não está garantida no Brasileirão Feminino séries A1 ou A2, será indicada para disputa da preliminar que dá vaga a segunda divisão do campeonato nacional. Em 2018, por exemplo, essa vaga seria do XV de Piracicaba, mas como a equipe abriu mão, a vaga na série A2 ficou com o time de Embu das Artes.</p>
+      <img class src="img/wagner.jpeg" alt="Imagem CSS" width="350px">
+  </section>
+  </main>
+    </div>
+  </div>
+  <footer class="rodape">
+    <button onclick="backtotop()" id="btntop"> <img src="img/_topo.png" alt="topo"></button>
+    <script> 
+      window.onscroll = function(){
+        scroll();
+      }
+      function scroll(){
+        var btn = document.getElementById("btntop");
+        if(document.documentElement.scrollTop > 400){
+          btn.style.display = "block";
+        }else{
+          btn.style.display = "none";
+        }
+      }
+      function backtotop(){
+        document.documentElement.scrollTop = 0;
+      }
+      function animar(){
+        const btn = document.getElementById('btn-menu');
+        btn.classList.toggle('ativar')
+      }
+      </script>
+    <script src="script.js"></script>
+  </footer>
+</body> 
+</html>

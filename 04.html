@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br" >
+<head>
+  <meta charset="utf-8">
+  <title> Campeonato Taça das Favelas </title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  </link>
+</head>
+
+<body>
+  <header>
+    <div class="container animate__animated animate__pulse">
+        <div class="logo"><img src="img/logo.png" alt="Imagem CSS" width="100px"></div>
+        <div class="menu">
+          <nav>
+            <h1>Campeonatos de Futebol Masculino e Feminino</h1>
+            <hr>
+            <a href="index.html">História do Futebol</a>
+            <a href="01.html">Paulista Masculino</a>
+            <a href="02.html">Paulista Feminino</a>
+            <a href="03.html">Copa do Nordeste</a>
+            <a href="05.html">Super Copa Pioneer</a>
+          </hr>
+            <h5>Colégio Objetivo - 2ºM1</h5>
+          </nav>
+      </div>
+    
+
+      <button onclick="animar()" id="btn-menu">
+        <span class="linha"></span>
+        <span class="linha"></span>
+        <span class="linha"></span>
+      </button>
+
+      <div class="menu-mobile" id="menu-mobile">
+          <nav>
+            <h1>Campeonatos de Futebol Masculino e Feminino</h1>
+            <hr>
+            <a href="index.html">História do Futebol</a>
+            <a href="01.html">Paulista Masculino</a>
+            <a href="02.html">Paulista Feminino</a>
+            <a href="03.html">Copa do Nordeste</a>
+            <a href="05.html">Super Copa Pioneer</a>
+          </hr>
+            <h5>Colégio Objetivo - 2ºM1</h5>
+          </nav>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <div class="apresentacao">
+  <main class="apresentacao" >
+    <section class="apresentacao_conteudo">
+      <h1 class="apresentacao_conteudo_titulo">Campeonato Taça das Favelas</h1>
+  <img class src="img/jaça_das_Favelas.jpg" alt="Imagem CSS" width="450px">
+      <p class="apresencao_conteudo_texto">
+        A Taça das Favelas é o maior campeonato de futebol entre favelas do mundo. O torneio realizado pela Central Única das Favelas (CUFA) e produzido pela InFavela, empresa da Favela Holding, foi disputado pela primeira vez em 2012, no Rio de Janeiro, completando 10 anos, em 2022.
+        Ainda em 2022, foi realizado mais um grande sonho da CUFA que foi o acontecimento da primeira edição da Taça das Favelas Nacional, o Favelão 2022, que teve as suas grandes finais em novembro, na Arena Barueri, com transmissão ao vivo em TV aberta.</p>
+        <img class src="img/faveladas.jpg" alt="Imagem CSS" width="350px">
+        <p class="apresencao_conteudo_texto">
+          As grandes finais de 2019 foram no dia 27 de julho, com mais de 10 mil pessoas em Moça Bonita, Estádio do Bangu Atlético Clube, com transmissão ao vivo da Globo e do Sportv. O Curral das Éguas se sagrou campeão da categoria feminina, enquanto o Gogó da Ema ficou com o título da masculina. As maiores campeãs no estado são a favela de Padre Miguel AP, no masculino, que levou o título em 2015 e 2016, Corte Oito e Cidade de Deus, no feminino, cada uma com duas conquistas também.
+          São Paulo teve a sua primeira edição, em 2019. E já no primeiro ano contou com o envolvimento de milhares de favelas, colocando mais de 40 mil pessoas no Pacaembu, nas grandes finais vencidas pelo Complexo da Casa Verde, no feminino, e pelo Parque Santo Antônio, com transmissão ao vivo do Sportv e da Globo. </p>
+           <img class src="img/favela.webp" alt="Imagem CSS" width="450px">
+          <p class="apresencao_conteudo_texto">
+          Como a Taça não é só futebol e sim um fator de integração social, a organização do campeonato oferece, antes do início dos jogos, em todos os estados que recebem o projeto, workshops sociais para jogadores e técnicos, que vão desde cuidado com a alimentação até educação financeira. </p>
+
+            
+            <p class="apresencao_conteudo_texto">
+            O volante Patrick de Paula jogou a Taça das Favelas Rio pelo Complexo Santa Margarida, foi revelado, se profissionalizou no Palmeiras, onde fez o gol do título do Paulista de 2020, na disputa de pênaltis, contra o Corinthians. Ele jogou a edição carioca do maior campeonato de futebol entre favelas do mundo nos anos de 2015, 2016 e 2017. </p>
+              <img class src="img/patrickdepaula.webp" alt="Imagem CSS" width="450px">
+              
+
+
+    </section>
+    </main>
+    </div>
+  </div>
+    <footer class="rodape">
+      <button onclick="backtotop()" id="btntop"> <img src="img/_topo.png" alt="topo"></button>
+      <script> 
+        window.onscroll = function(){
+          scroll();
+        }
+        function scroll(){
+          var btn = document.getElementById("btntop");
+          if(document.documentElement.scrollTop > 400){
+            btn.style.display = "block";
+          }else{
+            btn.style.display = "none";
+          }
+        }
+        function backtotop(){
+          document.documentElement.scrollTop = 0;
+        }
+        function animar(){
+          const btn = document.getElementById('btn-menu');
+          btn.classList.toggle('ativar')
+        }
+        </script>
+      <script src="script.js"></script>
+    </footer>
+</body> 
+</html>
